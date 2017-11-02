@@ -5,10 +5,12 @@ public class FizzBuzz {
     public static String fizzBuzz(Integer number) {
         if (number == 0) return "0";
 
-        if (number % 3 == 0) return "fizz";
-        if (number % 5 == 0) return "buzz";
+        String s = "";
 
-        return String.valueOf(number);
+        if (number % 3 == 0) s += "fizz ";
+        if (number % 5 == 0) s += "buzz";
+
+        return s.isEmpty()? String.valueOf(number) : s.trim();
     }
 
 }
