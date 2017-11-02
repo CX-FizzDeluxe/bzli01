@@ -55,7 +55,7 @@ public class FizzBuzzTest {
 
     @Test
     public void fizzBuzz_53ReturnsBuzz() {
-        assertThat(FizzBuzz.fizzBuzz(53), is("fake deluxe"));
+        assertThat(FizzBuzz.fizzBuzz(53), is("fizz buzz"));
     }
 
 }

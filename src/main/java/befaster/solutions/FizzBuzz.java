@@ -15,7 +15,7 @@ public class FizzBuzz {
             if (!divisibleBy(number, 2)) {
                 s += " fake deluxe";
             } else {
-                s += "deluxe";
+                s += " deluxe";
             }
         }
 
