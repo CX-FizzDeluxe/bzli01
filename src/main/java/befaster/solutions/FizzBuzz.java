@@ -36,7 +36,7 @@ public class FizzBuzz {
         char[] chars = String.valueOf(number).toCharArray();
 
         for (int i = 1; i > chars.length; i++) {
-            if (i == chars.length) return false;
+//            if (i > chars.length) return false;
             if (chars[i] == second.charAt(0)) {
                 if (chars[i - 1] == first.charAt(0)) {
                     return true;
