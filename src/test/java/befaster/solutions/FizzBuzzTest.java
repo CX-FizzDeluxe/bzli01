@@ -19,12 +19,12 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void fizzBuzz_3ReturnsFizz() {
+    public void fizzBuzz_3ReturnsFizzFakeDeluxe() {
         assertThat(FizzBuzz.fizzBuzz(3), is("fizz fake deluxe"));
     }
 
     @Test
-    public void fizzBuzz_5ReturnsBuzz() {
+    public void fizzBuzz_5ReturnsBuzzFakeDeluxe() {
         assertThat(FizzBuzz.fizzBuzz(5), is("buzz fake deluxe"));
     }
 
@@ -39,7 +39,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void fizzBuzz_15ReturnsFizzBuzz() {
+    public void fizzBuzz_15ReturnsFizzBuzzFakeDeluxe() {
         assertThat(FizzBuzz.fizzBuzz(15), is("fizz buzz fake deluxe"));
     }
 
@@ -59,7 +59,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void fizzBuzz_52ReturnsBuzz() {
+    public void fizzBuzz_52ReturnsBuzzDeluxe() {
         assertThat(FizzBuzz.fizzBuzz(52), is("buzz deluxe"));
     }
 
