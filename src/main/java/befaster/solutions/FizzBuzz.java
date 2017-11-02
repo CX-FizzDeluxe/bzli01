@@ -7,9 +7,9 @@ public class FizzBuzz {
 
         String s = "";
 
-        if (divisibleBy(number, 3)) s += "fizz";
+        if (divisibleBy(number, 3) || contains(number, "3")) s += "fizz";
 
-        if (divisibleBy(number, 5)) s += " buzz";
+        if (divisibleBy(number, 5) || contains(number, "5") ) s += " buzz";
 
         if (contains(number, "3") || contains(number, "5")) {
             if (!divisibleBy(number, 2)) {
