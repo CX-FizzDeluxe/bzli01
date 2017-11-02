@@ -7,12 +7,16 @@ public class FizzBuzz {
 
         String s = "";
 
-        if (number % 3 == 0 || contains(number, "3")) s += "fizz";
-        if (number % 5 == 0 || contains(number, "5")) s += " buzz";
-        if (isDeluxe(number) && number % 2 == 0) s += " deluxe";
-        if (isDeluxe(number) && number % 2 == 1) s += " fake deluxe";
+        if (divisibleBy(number, 3) || contains(number, "3")) s += "fizz";
+        if (divisibleBy(number, 5) || contains(number, "5")) s += " buzz";
+
 
         return s.isEmpty()? String.valueOf(number) : s.trim();
+    }
+
+
+    private static boolean divisibleBy(Integer number, Integer divideBy) {
+        return number % divideBy == 0;
     }
 
     private static boolean contains(Integer number, String s) {
