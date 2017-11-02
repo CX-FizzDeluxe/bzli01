@@ -45,12 +45,12 @@ public class FizzBuzzTest {
 
     @Test
     public void fizzBuzz_31ReturnsFizz() {
-        assertThat(FizzBuzz.fizzBuzz(31), is("fake deluxe"));
+        assertThat(FizzBuzz.fizzBuzz(31), is("fizz fake deluxe"));
     }
 
     @Test
     public void fizzBuzz_52ReturnsBuzz() {
-        assertThat(FizzBuzz.fizzBuzz(52), is("deluxe"));
+        assertThat(FizzBuzz.fizzBuzz(52), is("buzz deluxe"));
     }
 
     @Test
