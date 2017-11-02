@@ -11,7 +11,8 @@ public class FizzBuzz {
 
         if (divisibleBy(number, 5) || contains(number, "5") ) s += " buzz";
 
-        if (contains(number, "3") || contains(number, "5")) {
+        if ((contains(number, "3") || contains(number, "5"))
+                && !(contains(number, "3") && contains(number, "5"))) {
             if (!divisibleBy(number, 2)) {
                 s += " fake deluxe";
             } else {

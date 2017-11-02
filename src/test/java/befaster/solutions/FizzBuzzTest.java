@@ -49,6 +49,16 @@ public class FizzBuzzTest {
     }
 
     @Test
+    public void fizzBuzz_36ReturnsFizzDeluxe() {
+        assertThat(FizzBuzz.fizzBuzz(36), is("fizz deluxe"));
+    }
+
+    @Test
+    public void fizzBuzz_50ReturnsBuzzDeluxe() {
+        assertThat(FizzBuzz.fizzBuzz(50), is("buzz deluxe"));
+    }
+
+    @Test
     public void fizzBuzz_52ReturnsBuzz() {
         assertThat(FizzBuzz.fizzBuzz(52), is("buzz deluxe"));
     }
