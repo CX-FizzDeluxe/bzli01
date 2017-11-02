@@ -7,13 +7,19 @@ public class FizzBuzz {
 
         String s = "";
 
-        if (divisibleBy(number, 3) || contains(number, "3")) s += "fizz";
+        if (divisibleBy(number, 3)) s += "fizz";
 
-        if (divisibleBy(number, 5) || contains(number, "5")) s += " buzz";
+        if (divisibleBy(number, 5)) s += " buzz";
 
+        if (contains(number, "3") || contains(number, "5")) {
+            if (!divisibleBy(number, 2)) {
+                s += " fake deluxe";
+            } else {
+                s += "deluxe";
+            }
+        }
 
-
-        return s.isEmpty()? String.valueOf(number) : s.trim();
+        return s.isEmpty() ? String.valueOf(number) : s.trim();
     }
 
 
@@ -23,19 +29,6 @@ public class FizzBuzz {
 
     private static boolean contains(Integer number, String s) {
         return String.valueOf(number).contains(s);
-    }
-
-    private static boolean isDeluxe(Integer number) {
-        return (number > 10 && numbersAreIdentical(number));
-    }
-
-    private static boolean numbersAreIdentical(Integer number) {
-        char[] chars = String.valueOf(number).toCharArray();
-
-        for (char c : chars) {
-            if (c != chars[0]) return false;
-        }
-        return true;
     }
 
 }
