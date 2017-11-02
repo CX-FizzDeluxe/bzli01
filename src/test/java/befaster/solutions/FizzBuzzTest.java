@@ -73,7 +73,10 @@ public class FizzBuzzTest {
         assertThat(FizzBuzz.fizzBuzz(55), is("buzz deluxe"));
     }
 
-
+    @Test
+    public void fizzBuzz_55ReturnsFizzBuzzDeluxe() {
+        assertThat(FizzBuzz.fizzBuzz(555), is("fizz buzz deluxe"));
+    }
 
 
 }
