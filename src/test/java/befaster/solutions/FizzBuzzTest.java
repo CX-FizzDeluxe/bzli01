@@ -43,4 +43,9 @@ public class FizzBuzzTest {
         assertThat(FizzBuzz.fizzBuzz(15), is("fizz buzz"));
     }
 
+    @Test
+    public void fizzBuzz_31ReturnsFizz() {
+        assertThat(FizzBuzz.fizzBuzz(31), is("fizz"));
+    }
+
 }
