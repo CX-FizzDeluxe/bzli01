@@ -15,7 +15,16 @@ public class FizzBuzz {
     }
 
     private static boolean isDeluxe(Integer number) {
-        return (number > 10 && )
+        return (number > 10 && numbersAreIdentical(number));
+    }
+
+    private static boolean numbersAreIdentical(Integer number) {
+        char[] chars = String.valueOf(number).toCharArray();
+
+        for (char c : chars) {
+            if (c != chars[0]) return false;
+        }
+        return true;
     }
 
 }
