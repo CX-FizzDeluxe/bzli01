@@ -32,4 +32,12 @@ public class FizzBuzz {
         return String.valueOf(number).contains(s);
     }
 
+    private static boolean appearInSequence(Integer number, String first, String second) {
+        char[] chars = String.valueOf(number).toCharArray();
+
+        for (char c : chars) {
+            if (c == )
+        }
+    }
+
 }
