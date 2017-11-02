@@ -7,8 +7,8 @@ public class FizzBuzz {
 
         String s = "";
 
-        if (number % 3 == 0) s += "fizz ";
-        if (number % 5 == 0) s += "buzz";
+        if (number % 3 == 0 || String.valueOf(number).contains("3")) s += "fizz ";
+        if (number % 5 == 0 || String.valueOf(number).contains("5")) s += "buzz";
 
         return s.isEmpty()? String.valueOf(number) : s.trim();
     }
