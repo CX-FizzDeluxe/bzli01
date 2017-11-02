@@ -63,4 +63,10 @@ public class FizzBuzzTest {
         assertThat(FizzBuzz.fizzBuzz(22), is("deluxe"));
     }
 
+    @Test
+    public void fizzBuzz_33ReturnsDeluxe() {
+        assertThat(FizzBuzz.fizzBuzz(33), is("fizz deluxe"));
+    }
+
+
 }
