@@ -65,17 +65,17 @@ public class FizzBuzzTest {
 
     @Test
     public void fizzBuzz_33ReturnsFizzDeluxe() {
-        assertThat(FizzBuzz.fizzBuzz(33), is("fizz deluxe"));
+        assertThat(FizzBuzz.fizzBuzz(33), is("fizz fake deluxe"));
     }
 
     @Test
     public void fizzBuzz_55ReturnsBuzzDeluxe() {
-        assertThat(FizzBuzz.fizzBuzz(55), is("buzz deluxe"));
+        assertThat(FizzBuzz.fizzBuzz(55), is("buzz fake deluxe"));
     }
 
     @Test
     public void fizzBuzz_55ReturnsFizzBuzzDeluxe() {
-        assertThat(FizzBuzz.fizzBuzz(555), is("fizz buzz deluxe"));
+        assertThat(FizzBuzz.fizzBuzz(555), is("fizz buzz fake deluxe"));
     }
 
 

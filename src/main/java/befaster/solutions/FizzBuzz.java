@@ -9,7 +9,8 @@ public class FizzBuzz {
 
         if (number % 3 == 0 || String.valueOf(number).contains("3")) s += "fizz";
         if (number % 5 == 0 || String.valueOf(number).contains("5")) s += " buzz";
-        if (isDeluxe(number)) s += " deluxe";
+        if (isDeluxe(number) && number % 2 == 0) s += " deluxe";
+        if (isDeluxe(number) && number % 2 == 1) s += " fake deluxe";
 
         return s.isEmpty()? String.valueOf(number) : s.trim();
     }
