@@ -20,13 +20,27 @@ public class FizzBuzzTest {
 
     @Test
     public void fizzBuzz_3ReturnsFizz() {
-        assertThat(FizzBuzz.fizzBuzz(3), is("Fizz"));
+        assertThat(FizzBuzz.fizzBuzz(3), is("fizz"));
     }
 
     @Test
     public void fizzBuzz_5ReturnsBuzz() {
-        assertThat(FizzBuzz.fizzBuzz(5), is("Buzz"));
+        assertThat(FizzBuzz.fizzBuzz(5), is("buzz"));
     }
 
+    @Test
+    public void fizzBuzz_6ReturnsFizz() {
+        assertThat(FizzBuzz.fizzBuzz(6), is("fizz"));
+    }
+
+    @Test
+    public void fizzBuzz_10ReturnsBuzz() {
+        assertThat(FizzBuzz.fizzBuzz(10), is("buzz"));
+    }
+
+    @Test
+    public void fizzBuzz_15ReturnsFizzBuzz() {
+        assertThat(FizzBuzz.fizzBuzz(15), is("fizz buzz"));
+    }
 
 }
